@@ -1,0 +1,1 @@
+from gym_my_maze.envs.gym_my_maze import MyMaze

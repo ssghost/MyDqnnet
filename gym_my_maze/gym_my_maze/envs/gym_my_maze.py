@@ -72,7 +72,6 @@ class MyMaze(gym.Env):
             wall = rendering.make_polygon([(l,b), (l,t), (r,t), (r,b)]).set_color([0,0,0]) 
             for i in range(self.row+2):
                 for j in range(self.col+2):
-                    l,r,t,b = j*10, (j+1)*10, i*10, (i+1)*10
                     if self.roadmap[i,j] == 0:
                         self.viewer.add_geom(path.add_attr(translation=(10*j, 10*i)))
                     elif self.roadmap[i,j] == 1:

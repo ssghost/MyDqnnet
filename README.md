@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/ssghost/MyDqnnet.svg?style=svg&circle-token=f9753972165330e8bdbf8b45244b2c833c31e5cc)](https://app.circleci.com/pipelines/github/ssghost/MyDqnnet)
 # MyDqnnet
 A Completely Customised 2D Maze Walking Deep Q-Network Model with Openai Gym &amp; Tensorflow Agents.
 ## Usage

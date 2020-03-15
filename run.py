@@ -9,6 +9,8 @@ def main():
         print(err) 
         sys.exit()
     
+    roadpath, confpath, videopath = None, None, None
+    
     for o, a in opts:
         if o in ('-r', '--roadpath') and type(a)==str:
             roadpath = a
@@ -18,6 +20,7 @@ def main():
             videopath = a
         else:
             assert False, 'unhandled option' 
+            
     if roadpath and videopath:
         MyMaze.padding(roadpath)
         Dqnnet().conf_settings(confpath)

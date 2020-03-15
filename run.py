@@ -1,6 +1,6 @@
 import getopt, sys
 from dqn.dqnnet import Dqnnet
-from gym_my_maze.gym_my_maze.envs import MyMaze
+from gym_my_maze.gym_my_maze.envs.gym_my_maze import MyMaze
 
 def main():
     try:

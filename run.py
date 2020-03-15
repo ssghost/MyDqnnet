@@ -18,14 +18,14 @@ def main():
             videopath = a
         else:
             assert False, 'unhandled option' 
-
-    MyMaze.padding(roadpath)
-    Dqnnet().conf_settings(confpath)
-    Dqnnet().create_env()
-    Dqnnet().create_agent()
-    Dqnnet().create_policy()
-    Dqnnet().train()
-    Dqnnet().create_video(videopath) 
+    if roadpath and videopath:
+        MyMaze.padding(roadpath)
+        Dqnnet().conf_settings(confpath)
+        Dqnnet().create_env()
+        Dqnnet().create_agent()
+        Dqnnet().create_policy()
+        Dqnnet().train()
+        Dqnnet().create_video(videopath) 
 
 if __name__ == "__main__":
     main()

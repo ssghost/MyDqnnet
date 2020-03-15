@@ -61,7 +61,7 @@ class MyMaze(gym.Env):
         self.padding(roadmap)
         self.probe = [1,1]
 
-    def render(self, mode=render.modes):
+    def render(self, mode='render.modes'):
         screen_width = 10*(self.col+2)
         screen_height = 10*(self.row+2)
         if self.viewer is None:

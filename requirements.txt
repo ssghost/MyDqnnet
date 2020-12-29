@@ -1,6 +1,6 @@
 numpy>=1.15.4
 gym>=0.10.9
-tensorflow>=2.1.0
+tensorflow>=v2.1.0
 tf-agents>=0.3.0
 Pillow>=4.2.1
 imageio>=2.2.0 
